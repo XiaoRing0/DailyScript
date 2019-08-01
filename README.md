@@ -1,6 +1,6 @@
 # DailyScript
 ## SourceCode
-
+### 1. 格式化Talbe
 ```lua
 function GuildPanel.FormatValue(val)
     if type(val) == "string" then
