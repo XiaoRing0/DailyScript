@@ -1,15 +1,8 @@
 # DailyScript
 ## SourceCode
-### 1. 格式化Talbe
+### 1. FormatTable
 ```lua
-function GuildPanel.FormatValue(val)
-    if type(val) == "string" then
-        return string.format("%q", val)
-    end
-    return tostring(val)
-end
-
-function GuildPanel.FormatTable(t, tabcount)
+function GuildPanel.(t, tabcount)
     tabcount = tabcount or 0
     -- if tabcount > 5 then
     --     --防止栈溢出
@@ -30,5 +23,12 @@ function GuildPanel.FormatTable(t, tabcount)
         str = str..tostring(t)..'\n'
     end
     return str
+end
+
+function GuildPanel.FormatValue(val)
+    if type(val) == "string" then
+        return string.format("%q", val)
+    end
+    return tostring(val)
 end
 ```
