@@ -1,5 +1,4 @@
 # DailyScript
-DailyScript
 ## SourceCode
 
 ```lua
