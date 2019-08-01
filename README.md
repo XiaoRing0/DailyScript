@@ -1,5 +1,11 @@
 # DailyScript
-## SourceCode
+## Content
+<!-- vim-markdown-toc GFM -->
+* [1. FormatTable](#1. FormatTable)
+* [2.](#2.)
+* [3.](#3.)
+* [4.](#4.)
+<!-- vim-markdown-toc -->
 ### 1. FormatTable
 ```lua
 function GuildPanel.FormatTable(t, tabcount)
