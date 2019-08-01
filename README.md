@@ -2,7 +2,7 @@
 ## SourceCode
 ### 1. FormatTable
 ```lua
-function GuildPanel.(t, tabcount)
+function GuildPanel.FormatTable(t, tabcount)
     tabcount = tabcount or 0
     -- if tabcount > 5 then
     --     --防止栈溢出
