@@ -2,7 +2,7 @@
 ## Content
 <!-- vim-markdown-toc GFM -->
 * [1. FormatTable](#FormatTable)
-* [2. Sort with priority](###Sort with priority)
+* [2. Sort with priority](###SortWithPriority)
 * [3.](#3.)
 * [4.](#4.)
 <!-- vim-markdown-toc -->
