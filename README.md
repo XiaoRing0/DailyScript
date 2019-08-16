@@ -38,7 +38,7 @@ function FormatValue(val)
     return tostring(val)
 end
 ```
-### Sort with priority
+### SortWithPriority
 ```lua
 function SortTaskList()
     table.sort(this.taskList,function(a, b)
