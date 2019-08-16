@@ -2,13 +2,13 @@
 ## Content
 <!-- vim-markdown-toc GFM -->
 * [1. FormatTable](#FormatTable)
-* [2.](#2.)
+* [2. Sort with priority](###Sort with priority)
 * [3.](#3.)
 * [4.](#4.)
 <!-- vim-markdown-toc -->
 ### FormatTable
 ```lua
-function GuildPanel.FormatTable(t, tabcount)
+function FormatTable(t, tabcount)
     tabcount = tabcount or 0
     -- if tabcount > 5 then
     --     --防止栈溢出
@@ -31,10 +31,27 @@ function GuildPanel.FormatTable(t, tabcount)
     return str
 end
 
-function GuildPanel.FormatValue(val)
+function FormatValue(val)
     if type(val) == "string" then
         return string.format("%q", val)
     end
     return tostring(val)
+end
+```
+### Sort with priority
+```lua
+function SortTaskList()
+    table.sort(this.taskList,function(a, b)
+        if a == nil or b == nil then
+            return false
+        end
+        if a.taskStatus ~= b.taskStatus then
+            return a.taskStatus < b.taskStatus
+        elseif a.taskId ~= b.taskId then
+            return a.taskId < b.taskId
+        else
+            return false
+        end
+    end)
 end
 ```
